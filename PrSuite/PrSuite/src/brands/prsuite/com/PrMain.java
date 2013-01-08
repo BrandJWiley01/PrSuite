@@ -51,10 +51,10 @@ public class PrMain extends JavaPlugin implements Listener {
 		saddle.setIngredient('I', Material.IRON_INGOT);
 		saddle.setIngredient('S', Material.STRING);
 		
-		ShapedRecipe playerhead = new ShapedRecipe(new ItemStack(Material.SKULL_ITEM));
-		playerhead.shape("BBB", "BWB", "WWW");
-		playerhead.setIngredient('B', Material.WOOL);
-		playerhead.setIngredient('W', Material.WOOL);
+		ShapedRecipe skelehead = new ShapedRecipe(new ItemStack(Material.SKULL_ITEM));
+		skelehead.shape("III", "GIG", "IGI");
+		skelehead.setIngredient('I', Material.IRON);
+		skelehead.setIngredient('G', Material.GRAVEL);
 		
 		ShapedRecipe sponge = new ShapedRecipe(new ItemStack(Material.SPONGE));
 		sponge.shape("LLL", "LYL", "LLL");
@@ -68,7 +68,7 @@ public class PrMain extends JavaPlugin implements Listener {
 		getServer().addRecipe(mossstonebrick);
 		getServer().addRecipe(crackstonebrick);
 		getServer().addRecipe(saddle);
-		getServer().addRecipe(playerhead);
+		getServer().addRecipe(skelehead);
 		getServer().addRecipe(sponge);
 		
 		File dir = getDataFolder();
